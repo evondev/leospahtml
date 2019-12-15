@@ -1,0 +1,183 @@
+/*Header*/
+.header {
+  min-height: 100vh;
+  position: relative;
+  background-image: url("../images/leaf.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 12.5%;
+}
+.header__image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 43.5%;
+}
+@media screen and (max-width: 767px) {
+  .header__image {
+    display: none;
+  }
+}
+.header__top {
+  padding-top: 2rem;
+  display: flex;
+  align-items: baseline;
+}
+@media screen and (max-width: 767px) {
+  .header__top {
+    justify-content: space-between;
+  }
+}
+.header__logo {
+  max-width: 10rem;
+}
+.header__content {
+  padding-top: 19rem;
+  position: relative;
+  max-width: 55.5rem;
+  z-index: 2;
+}
+@media screen and (max-width: 1439px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header__content {
+    padding-top: 12rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__content {
+    padding-top: 7rem;
+  }
+}
+.header__content-slogan {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.header__content-title {
+  font-size: 6rem;
+  color: var(--gray-dark);
+  font-family: var(--secondary-font);
+  font-weight: bold;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+}
+@media screen and (max-width: 767px) {
+  .header__content-title {
+    font-size: 4rem;
+  }
+}
+.header__content-desc {
+  font-size: 1.5rem;
+  color: var(--gray-dark);
+  margin-bottom: 5rem;
+}
+.header__content-cta {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .header__content-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+.header__content-cta > a:first-child {
+  margin-right: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .header__content-cta > a:first-child {
+    margin-right: 0;
+    margin-bottom: 2.5rem;
+  }
+}
+
+/*Header Menu*/
+.menu {
+  margin-left: 14%;
+  position: relative;
+  z-index: 2;
+}
+.menu__collapse {
+  display: none;
+  position: relative;
+  top: -5px;
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .menu__collapse {
+    display: block;
+  }
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+.menu__item {
+  margin: 0 2.5rem;
+}
+.menu__link {
+  color: var(--gray-dark);
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.2s linear;
+}
+.menu__link:hover {
+  color: var(--primary-color);
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+/*Buttons*/
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  border: 0;
+  outline: none;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--primary-font);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: var(--primary-color);
+}
+.btn--rounded {
+  border-radius: 5rem;
+}
+.btn--icon i {
+  margin-left: 1rem;
+  color: inherit;
+}
+.btn__play-video {
+  display: flex;
+  align-items: center;
+}
+.btn__play-video > i {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  background-color: var(--bg-block);
+  color: var(--primary-color);
+  margin-right: 10px;
+}
+.btn__play-video > span {
+  color: var(--gray-dark);
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=main.css.map */

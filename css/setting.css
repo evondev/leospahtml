@@ -23,6 +23,7 @@ body {
   font-weight: 300;
   color: var(--gray-dark);
   background-color: var(--white);
+  line-height: 1.4;
 }
 img {
   display: block;
