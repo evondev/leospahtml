@@ -180,4 +180,117 @@
   font-size: 1.4rem;
 }
 
+/*About*/
+.about__inner {
+  position: relative;
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+@media screen and (max-width: 767px) {
+  .about__inner {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+.about__flower1 {
+  position: absolute;
+  max-width: 13.5rem;
+  top: 0;
+  left: 0;
+}
+.about__flower2 {
+  position: absolute;
+  max-width: 7rem;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.about__content {
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .about__content {
+    max-width: 72%;
+  }
+}
+.about__content img {
+  margin: 0 auto 4rem;
+  max-width: 8rem;
+}
+.about__content h3 {
+  text-transform: uppercase;
+  color: var(--gray-light);
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.about__list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.about__item {
+  width: 24.8%;
+  position: relative;
+}
+@media screen and (max-width: 1023px) {
+  .about__item {
+    width: 49.6%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about__item {
+    width: 100%;
+  }
+}
+.about__item:hover .about__item-content {
+  opacity: 1;
+  visibility: visible;
+}
+.about__item-content {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: var(--secondary-font);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+.about__item-content > img {
+  max-width: 5rem;
+  margin-bottom: 1rem;
+}
+.about__item-content > span {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+/*Heading*/
+.heading {
+  margin-bottom: 7rem;
+}
+.heading__title {
+  font-size: 4.2rem;
+  font-weight: bold;
+  font-family: var(--secondary-font);
+  margin-bottom: 4rem;
+}
+.heading__desc {
+  color: var(--gray-light);
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
 /*# sourceMappingURL=main.css.map */
