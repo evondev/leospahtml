@@ -565,3 +565,117 @@
     font-size: 1.2rem;
   }
 }
+.contact {
+  padding-bottom: 14rem;
+  background-color: white;
+  .container {
+    max-width: 100rem;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  &__info,
+  &__form {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  @media screen and (min-width: 768px) {
+    &__info {
+      width: 35%;
+    }
+    &__form {
+      width: 65%;
+      padding-left: 12rem;
+    }
+  }
+  &__form {
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 2rem;
+      border: 1px solid #eee;
+      padding: 1.5rem;
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--gray-light);
+      outline: none;
+      &::-webkit-input-placeholder {
+        text-transform: uppercase;
+      }
+    }
+    textarea {
+      resize: none;
+      min-height: 15rem;
+      margin-bottom: 3.5rem;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    i {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 5rem;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--primary-color);
+      flex-shrink: 0;
+      margin-right: 2.5rem;
+      font-size: 2rem;
+    }
+  }
+  &__text {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--gray-light);
+    a {
+      display: block;
+      color: var(--gray-light);
+      margin: 5px 0;
+    }
+  }
+  &__item:nth-of-type(2) {
+    margin: 4rem 0;
+  }
+}
+.footer {
+  background-color: var(--bg-block);
+  padding: 9rem 0;
+  .container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  &__logo {
+    max-width: 12rem;
+    margin: 0 auto 4rem;
+  }
+  &__social {
+    margin: 4.5rem 0;
+    display: flex;
+    align-items: center;
+    &-item {
+      font-size: 2rem;
+      color: var(--gray-dark);
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      cursor: pointer;
+      transition: color 0.2s linear;
+      &:hover {
+        color: var(--primary-color);
+      }
+      &:not(:first-child) {
+        border-left: 1px solid var(--gray-light);
+      }
+    }
+  }
+
+  .menu {
+    margin-left: 0;
+  }
+}
